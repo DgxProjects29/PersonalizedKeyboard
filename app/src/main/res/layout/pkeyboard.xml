@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/key_layT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/ColorKeyBg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tkey_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp"
+                android:background="@color/ColorKey" />
+
+            <Button
+                android:id="@+id/tkey_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="16sp"
+                android:background="@color/ColorKey" />
+
+
+            <Button
+                android:id="@+id/tkey_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <ImageButton
+                android:id="@+id/tkey_delete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_backspace"
+                android:background="@color/ColorKey" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/tkey_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textSize="16sp"
+                android:background="@color/ColorKey" />
+
+            <Button
+                android:id="@+id/tkey_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <Button
+                android:id="@+id/tkey_6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <ImageButton
+                android:id="@+id/key_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ColorKey"
+                android:src="@drawable/ic_navigate_next" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/tkey_7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <Button
+                android:id="@+id/tkey_8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <Button
+                android:id="@+id/tkey_9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <LinearLayout
+                android:id="@+id/key_lay3"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/ColorKey"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/tkey_minus"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <Button
+                android:id="@+id/tkey_0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:background="@color/ColorKey"
+                />
+
+            <Button
+                android:id="@+id/tkey_slash"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="16sp"
+                android:background="@color/ColorKey" />
+
+            <ImageButton
+                android:id="@+id/key_hide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ColorKey"
+                android:src="@drawable/ic_keyboard_hide" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>
