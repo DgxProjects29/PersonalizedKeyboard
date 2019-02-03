@@ -2,14 +2,20 @@ package com.dgx.aplicacion.neva.puche.diego.personalizedkeyboard;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity implements NextTool{
@@ -27,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements NextTool{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         Ed1 = findViewById(R.id.Edit_1);
         Ed2 = findViewById(R.id.Edit_2);
@@ -70,13 +77,22 @@ public class MainActivity extends AppCompatActivity implements NextTool{
         Ed5.setOnFocusChangeListener(focusListener);
         Ed6.setOnFocusChangeListener(focusListener);
 
+        //Disable the Soft Keyboard
+        Ed1.setShowSoftInputOnFocus(false);
+        Ed2.setShowSoftInputOnFocus(false);
+        Ed3.setShowSoftInputOnFocus(false);
+        Ed4.setShowSoftInputOnFocus(false);
+        Ed5.setShowSoftInputOnFocus(false);
+        Ed6.setShowSoftInputOnFocus(false);
+
+
     }
 
     private View.OnFocusChangeListener focusListener = new View.OnFocusChangeListener() {
         public void onFocusChange(View v, boolean hasFocus) {
             if (hasFocus){
                 if(!FirstAnimetion){
-                    AnimateOpen();
+                    OpenAnimation();
                 }
                 FirstAnimetion = true;
                 GetEditFocus = true;
@@ -125,13 +141,12 @@ public class MainActivity extends AppCompatActivity implements NextTool{
         }
     }
 
-    private void AnimateOpen(){
+    private void OpenAnimation(){
         animatorAlpha = ObjectAnimator.ofFloat(keyboard, View.ALPHA,0.0f, 1.0f);
         animatorAlpha.setDuration(500);
         AnimatorSet animatorSetAlpha = new AnimatorSet();
         animatorSetAlpha.playTogether(animatorAlpha);
         animatorSetAlpha.start();
-        Log.d("HOLA","sii");
 
         keyboard.setVisibility(View.VISIBLE);
     }

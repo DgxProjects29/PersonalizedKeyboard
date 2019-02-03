@@ -7,95 +7,109 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/focus_view"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"><requestFocus/></View>
+
     <!-- Coeficientes-->
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/Scroll_Id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@android:color/white"
-        android:elevation="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp">
-
-        <!-- EdidTexts-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:focusableInTouchMode="true">
-
-            <EditText
-                android:id="@+id/Edit_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:width="60dp"
-                android:ems="10"
-                 />
-
-            <EditText
-                android:id="@+id/Edit_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
-                android:width="60dp"
-                android:ems="10"
-                 />
-
-
-            <EditText
-                android:id="@+id/Edit_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:width="60dp"
-                android:ems="10"
-                android:imeOptions="actionNext"
-                tools:ignore="LabelFor" />
-
-        </LinearLayout>
+        android:focusable="false">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:layout_marginBottom="15dp">
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
 
-            <EditText
-                android:id="@+id/Edit_4"
-                android:layout_width="wrap_content"
+            <!-- EdidTexts-->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:width="60dp"
-                android:ems="10"
-                android:imeOptions="actionNext"
-                />
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/Edit_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
-                android:width="60dp"
-                android:ems="10"
-                android:imeOptions="actionNext" />
+                <EditText
+                    android:id="@+id/Edit_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:width="60dp"
+                    android:ems="10"
+                     />
 
-            <EditText
-                android:id="@+id/Edit_6"
-                android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/Edit_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:width="60dp"
+                    android:ems="10"
+                     />
+
+
+                <EditText
+                    android:id="@+id/Edit_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="60dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:width="60dp"
-                android:ems="10"
-                android:imeOptions="actionDone" />
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+                <EditText
+                    android:id="@+id/Edit_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:width="60dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    />
+
+                <EditText
+                    android:id="@+id/Edit_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:width="60dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext" />
+
+                <EditText
+                    android:id="@+id/Edit_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="60dp"
+                    android:ems="10"
+                    android:imeOptions="actionDone" />
+
+            </LinearLayout>
+            <!-- Fin de los EdidTexts-->
 
         </LinearLayout>
-        <!-- Fin de los EdidTexts-->
 
-    </LinearLayout>
+    </ScrollView>
 
     <com.dgx.aplicacion.neva.puche.diego.personalizedkeyboard.MyKeyboard
         android:id="@+id/Tkeyboard"
