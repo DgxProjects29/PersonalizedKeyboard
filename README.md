@@ -1,6 +1,6 @@
-# PersonalizedKeyboard
+# Custom Keyboard
 
-A Personalized Keyboard created in Android Studio
+A Custom Keyboard created in Android Studio
 
 The KeyBoard Example includes:
 
